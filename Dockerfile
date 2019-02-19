@@ -1,4 +1,4 @@
-FROM ruby:2.4.0
+FROM ruby:2.6.1
 
 ENV PHANTOM_VERSION phantomjs-2.1.1-linux-x86_64
 ENV NVM_DIR /nvm
@@ -12,7 +12,7 @@ RUN curl -L -s https://bitbucket.org/ariya/phantomjs/downloads/$PHANTOM_VERSION.
 RUN apt-get update && \
     apt-get install -y build-essential \
     libicu-dev \
-    postgresql-client libpq-dev && \
+    postgresql-client libpq-dev redis-tools && \
     rm -rf /var/lib/apt/lists/*
 
 RUN wget -q https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz -O wkhtmltox.tar.xz && \
