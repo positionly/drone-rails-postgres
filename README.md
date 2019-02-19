@@ -1,6 +1,6 @@
 # positionly/drone-rails-postgres
 
-Based on official ruby 2.4.0 image (note: latest tag is still 2.3.1 for the time being)
+Based on official ruby 2.6.1 image (note: latest tag is still 2.3.1 for the time being)
 
 Extras:
 
@@ -11,3 +11,4 @@ Extras:
 - nvm 0.33 with node 7.4.0
 - yarn 0.24.5
 - phantomjs 2.1.1
+- redis-tools
